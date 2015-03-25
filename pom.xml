@@ -39,7 +39,7 @@
   </parent>
 
 	<groupId>net.roboconf.recipes</groupId>
-	<artifactId>puppet-apache-mod-jk-last</artifactId>
+	<artifactId>puppet-apache-mod-jk-latest</artifactId>
 	<name>Roboconf Recipe :: Puppet :: Apache with ModJK</name>
 	<packaging>roboconf-app</packaging>
   <version>1.0-SNAPSHOT</version>

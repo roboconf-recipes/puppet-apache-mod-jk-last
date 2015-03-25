@@ -1,6 +1,6 @@
 # Deploy/Start/Stop/Update Apache
 
-class roboconf_apache_module($runningState = undef, $importAdded = undef, $importRemoved = undef, $importComponent = undef, $node_name = undef, $ip = undef, $loadbalance_able = undef)  {
+class roboconf_apache_module($runningState = undef, $importAdded = undef, $importRemoved = undef, $importComponent = undef, $node_name = undef, $ip = undef, $loadbalance_able_ajp = undef)  {
 
   package{'apache2':
     ensure => present,
@@ -41,6 +41,5 @@ class roboconf_apache_module($runningState = undef, $importAdded = undef, $impor
   }
 
 
- 
-}
 
+}

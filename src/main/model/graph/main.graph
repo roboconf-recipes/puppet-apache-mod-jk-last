@@ -1,9 +1,9 @@
-Apache-mjk-last {
+Apache-mjk-latest {
 	installer: puppet;
-	imports: loadbalance_able.*;
+	imports: loadbalance_able_ajp.*;
 	exports: ip;
 }
 
-facet loadbalance_able {
+facet loadbalance_able_ajp {
     exports: ip, portAJP = 8009;
 }
