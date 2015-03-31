@@ -23,5 +23,5 @@ can be load balanced by Apache.
 To use this recipe (assuming you use the Roboconf Maven plug-in) :
 
 1. Reference this project in your POM (or copy its resources by hand).
-2. Import **/net.roboconf.recipes.puppet-apache-mod-jk-latest/main.graph** in your own graph file.
+2. Import **/puppet-apache-mod-jk-latest/main.graph** in your own graph file.
 3. Add the **loadbalance_able_ajp** facet to the components that should be load balanced by Apache.
