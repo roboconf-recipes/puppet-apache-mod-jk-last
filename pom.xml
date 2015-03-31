@@ -32,24 +32,37 @@
 		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>net.roboconf.recipes</groupId>
-    <artifactId>recipes.parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>
+	<parent>
+		<groupId>net.roboconf.recipes</groupId>
+		<artifactId>recipes.parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
 
 	<groupId>net.roboconf.recipes</groupId>
 	<artifactId>puppet-apache-mod-jk-latest</artifactId>
 	<name>Roboconf Recipe :: Puppet :: Apache with ModJK</name>
 	<packaging>roboconf-app</packaging>
-  <version>1.0-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>net.roboconf</groupId>
 				<artifactId>roboconf-maven-plugin</artifactId>
-        <version>0.3-SNAPSHOT</version>
+				<version>0.3-SNAPSHOT</version>
+				<configuration>
+		            <renderers>
+		                <renderer>html</renderer>
+		                <renderer>markdown</renderer>
+		            </renderers>
+		            <locales>
+		                <locale>fr_FR</locale>
+		                <locale>en_US</locale>
+		            </locales>
+		            <options>
+		            	<recipe>true</recipe>
+		            </options>
+		        </configuration>
 			</plugin>
 		</plugins>
 	</build>
